@@ -13,17 +13,6 @@ Unzip the dataset files into individual folders.
 
 In the `config.py` file, set each value in `dataset_paths` to your corresponding dataset folder. 
 
-### Prepare `metadata.csv` for each dataset
-- Waterbirds, CelebA, CivilComments, and MultiNLI provide `metadata.csv` files.
-- For the ImageNet-9 and ImageNet-A datasets, run the following code
-    ```python
-    from data.in9_data import prepare_imagenet9_metadata, prepare_imageneta_metadata
-    base_dir = "path/to/imagenet/folder"
-    prepare_imagenet9_metadata(base_dir)
-    data_root = "path/to/imagenet-a/folder"
-    prepare_imageneta_metadata(data_root)
-    ```
-
 ## Example Usage
 ```bash
 python main.py --dataset waterbirds \
